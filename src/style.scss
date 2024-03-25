@@ -162,7 +162,7 @@ img {
 }
 
 @media screen and (width >= 1280px) {
-  .section_split {
+  .section__split {
     grid-template-columns: repeat(2, 1fr);
   }
 }
