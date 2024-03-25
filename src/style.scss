@@ -91,10 +91,15 @@ img {
 
 }
 
-.section_split {
+.section__split {
   display: grid;
   place-content: center;
   gap: min(5vw, 3rem);
+}
+
+.section__wrapper {
+  padding-inline: min(5vw, 15rem);
+  padding-block: min(10vh, 10rem);
 }
 
 .project__container {
@@ -112,11 +117,6 @@ img {
 }
 
 .project {
-
-  &__wrapper {
-    padding-inline: min(5vw, 15rem);
-    padding-block: min(10vh, 10rem);
-  }
 
   &__carousel {
     box-shadow: rgba(0, 0, 0, 0.25) 0 24px 80px 0;
