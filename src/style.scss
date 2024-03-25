@@ -92,10 +92,9 @@ img {
 }
 
 .section_split {
-  height: 80dvh;
   display: grid;
   place-content: center;
-  gap: clamp(1rem, 6vw + 1rem, 10rem);
+  gap: min(5vw, 3rem);
 }
 
 .project__container {
@@ -106,12 +105,17 @@ img {
   &.project-wl {
     --project-background: #a12b2b;
   }
+
+  &.project-yp {
+    --project-background: #68af9f;
+  }
 }
 
 .project {
 
   &__wrapper {
-    padding: clamp(1rem, 1vw + 1rem, 4rem);
+    padding-inline: min(5vw, 15rem);
+    padding-block: min(10vh, 10rem);
   }
 
   &__carousel {
@@ -157,7 +161,7 @@ img {
 
 }
 
-@media screen and (width >= 768px) {
+@media screen and (width >= 1280px) {
   .section_split {
     grid-template-columns: repeat(2, 1fr);
   }
