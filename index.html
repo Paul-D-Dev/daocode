@@ -122,8 +122,37 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section__wrapper contact">
     <!--    TODO FORM     -->
+    <form action="">
+      <label for="name" id="name">Name
+        <input type="text" placeholder="Your name" required/>
+      </label>
+
+      <label for="email" id="email">Email
+        <input type="email" name="email" placeholder="Your email" required/>
+      </label>
+
+      <label for="motive" id="motive">
+        Motivation
+        <select name="motive">
+          <option value="web">Web</option>
+          <option value="job">Job</option>
+        </select>
+      </label>
+
+      <label for="company" id="company">
+        Company
+        <input type="text" name="company" placeholder="Your company"/>
+      </label>
+
+      <label for="message" id="message">
+        Message
+        <input type="text" name="message" placeholder="Write your message">
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
