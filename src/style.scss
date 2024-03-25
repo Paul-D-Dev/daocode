@@ -58,10 +58,11 @@ img {
 }
 
 .hero {
+  $size-square: clamp(10px, 2vw + 4px, 60px);
   height: 100dvh;
   display: grid;
   place-content: center;
-  background-size: 10px 10px;
+  background-size: $size-square $size-square;
   background-image: linear-gradient(to right, var(--hero-background-color-grid) 1px, transparent 1px),
   linear-gradient(to bottom, var(--hero-background-color-grid) 1px, transparent 1px);
 
