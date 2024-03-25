@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dao Code</title>
   <link rel="stylesheet" href="src/style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0"/>
 </head>
 
 <body>
@@ -25,6 +30,8 @@
   <section class="hero">
 
     <div class="hero__details">
+
+      <!--      TODO add animation reveal-->
       <p>Web developer Javascript.</p>
       <p>Websites, Applications.</p>
 
@@ -37,14 +44,41 @@
 
 
   <section id="projects" class="projects">
-    <div class="project__wrapper">
-      <div class="project__carousel">
-        <img src="" alt="">
-      </div>
+    <div class="project__container project-wl">
+      <div class="project__wrapper section_split">
+        <div class="project__carousel">
+          <img src="/assets/projects/wonderlabs_1.png" alt="projects_wonderlabs">
+        </div>
 
-      <div class="project__description">
-        <h3>Title</h3>
-        <p>bla bla bla</p>
+
+        <!--         TODO add animation left to right -->
+        <div class="project__description">
+          <div class="project__title">
+            <h3>Wonderlabs Technologies</h3>
+            <span>Front end Developer</span>
+          </div>
+
+          <div class="project__missions">
+            <p>Fin Tech company</p>
+            <p>bla bla bla</p>
+            <p>bla bla bla</p>
+            <p>bla bla bla</p>
+          </div>
+
+          <div class="project__stack">
+            <ul class="project__stack__list">
+              <li class="project__stack__item">Angular 17</li>
+              <li class="project__stack__item">Github</li>
+            </ul>
+          </div>
+
+          <p>
+            <a href="https://www.wonderlabs.ca" target="_blank" class="fw-light">
+              VIEW WEBSITE
+              <span class="material-symbols-outlined">more_up</span>
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
