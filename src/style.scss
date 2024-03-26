@@ -123,6 +123,10 @@ textarea {
   &.project-yp {
     --project-background: #68af9f;
   }
+
+  &.project-ftp {
+    --project-background: #2e4770;
+  }
 }
 
 .project {
@@ -135,6 +139,8 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: end;
+    max-width: 25rem;
   }
 
   &__title {
@@ -144,6 +150,8 @@ textarea {
   }
 
   &__missions {
+    font-weight: lighter;
+
     p:not(:first-of-type) {
       margin-block-start: 1rem;
     }
