@@ -42,6 +42,10 @@ img {
   height: 100%;
 }
 
+textarea {
+  resize: none;
+}
+
 .header {
   // TODO fixed width issue
   position: fixed;
@@ -163,10 +167,58 @@ img {
 
 .contact {
 
-  form {
+  &__form__container {
+    max-width: 80rem;
+    margin-inside: auto;
+  }
+
+  &__form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      label {
+        font-weight: lighter;
+        height: 24px;
+        line-height: 24px;
+      }
+
+      input, select, textarea {
+        height: 46px;
+        background-color: var(--bg);
+        color: var(--color);
+        border: none;
+        border-bottom: 1px solid var(--color-primary);
+      }
+
+      textarea {
+        height: 92px;
+      }
+
+    }
+
+    &__message {
+      grid-column: 1 / -1;
+    }
+
+    &__btn {
+      grid-column: 1 / -1;
+
+      button[type="submit"] {
+        height: 46px;
+        background-color: var(--color-primary);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+      }
+    }
   }
 }
 

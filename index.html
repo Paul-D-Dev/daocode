@@ -123,36 +123,53 @@
   </section>
 
   <section id="contact" class="section__wrapper contact">
-    <!--    TODO FORM     -->
-    <form action="">
-      <label for="name" id="name">Name
-        <input type="text" placeholder="Your name" required/>
-      </label>
 
-      <label for="email" id="email">Email
-        <input type="email" name="email" placeholder="Your email" required/>
-      </label>
+    <div class="contact__form__container">
 
-      <label for="motive" id="motive">
-        Motivation
-        <select name="motive">
-          <option value="web">Web</option>
-          <option value="job">Job</option>
-        </select>
-      </label>
+      <!-- TODO send mail-->
+      <form class=contact__form action="">
 
-      <label for="company" id="company">
-        Company
-        <input type="text" name="company" placeholder="Your company"/>
-      </label>
+        <div>
+          <label for="name">Name <sup>*</sup></label>
+          <input type="text" name="name" id="name" placeholder="Your name" required/>
+        </div>
 
-      <label for="message" id="message">
-        Message
-        <input type="text" name="message" placeholder="Write your message">
-      </label>
+        <div>
+          <label for="email">Email <sup>*</sup></label>
+          <input type="email" name="email" id="email" placeholder="Your email" required/>
+        </div>
 
-      <button type="submit">Send</button>
-    </form>
+        <div>
+          <label for="motive">Motivation <sup>*</sup></label>
+          <select name="motive" id="motive" required>
+            <option value="job">Job</option>
+            <option value="web">Web</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="company">Company</label>
+          <input type="text" name="company" id="company" placeholder="Your company"/>
+        </div>
+
+        <div class="contact__form__message">
+          <label for="message">Message <sup>*</sup></label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Write your message"
+            required
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="contact__form__btn">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+
+    </div>
   </section>
 
   <footer>
