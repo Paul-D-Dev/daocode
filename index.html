@@ -19,8 +19,8 @@
   <div><a href="/#">Dao Code</a></div>
   <nav>
     <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects" class="link">Projects</a></li>
+      <li><a href="#contact" class="link">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -45,7 +45,7 @@
 
   <section id="projects" class="projects">
     <div class="project__container project-wl">
-      <div class="section__wrapper section__split">
+      <div class="section__wrapper section__split-image">
         <div class="project__carousel">
           <img src="/assets/projects/wonderlabs_1.png" alt="projects_wonderlabs">
         </div>
@@ -84,7 +84,7 @@
 
 
     <div class="project__container project-yp">
-      <div class="section__wrapper section__split">
+      <div class="section__wrapper section__split-image">
         <div class="project__carousel">
           <img src="/assets/projects/yp_1.png" alt="project yummypets">
         </div>
@@ -172,8 +172,19 @@
 
 </main>
 
-<footer>
-  <!--    TODO -->
+<footer class="section__wrapper">
+  <div class="footer__container section__split">
+    <div>
+      <p>Dao Code <br/>by Paul Dao</p>
+      <p class="reserved fw-light">© 2024 Dao code. ALL RIGHT RESERVED.</p>
+    </div>
+    <!--    TODO update to button with animation hover-->
+    <ul class="footer__social__list">
+      <li><a href="https://www.linkedin.com/in/pauldaodev/" class="link">Linkedin</a></li>
+      <li><a href="https://github.com/Paul-D-Dev" target="_blank" class="link">GitHub</a></li>
+      <li><a href="mailto:contact@daocode.fr" class="link">contact@dacode.fr</a></li>
+    </ul>
+  </div>
 </footer>
 
 <script type="module" src="/src/main.ts"></script>
