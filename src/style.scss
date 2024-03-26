@@ -53,6 +53,8 @@ textarea {
   position: fixed;
   width: 100%;
   padding: 1rem;
+  //padding-block: 1rem;
+  //padding-inline: min(5vw, 80rem);
   display: flex;
   justify-content: space-between;
 
@@ -176,7 +178,6 @@ textarea {
 
   &__form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 
     & > div {
@@ -221,6 +222,12 @@ textarea {
         letter-spacing: 8px;
       }
     }
+  }
+}
+
+@media screen and (width >= 620px) {
+  .contact__form {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
