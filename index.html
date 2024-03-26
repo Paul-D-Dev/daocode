@@ -47,7 +47,27 @@
     <div class="project__container project-wl">
       <div class="section__wrapper section__split-image">
         <div class="project__carousel">
-          <img src="/assets/projects/wonderlabs_1.png" alt="projects_wonderlabs">
+
+          <!--          TODO FIX image loaded before init swiper-->
+          <swiper-container pagination="true" navigation="true">
+            <swiper-slide lazy="true">
+              <img src="/assets/projects/wonderlabs_1.png" alt="projects_wonderlabs" loading="lazy">
+            </swiper-slide>
+
+            <swiper-slide loading="lazy">
+              <img src="/assets/projects/wonderlabs_2.png" alt="projects_wonderlabs" loading="lazy">
+
+            </swiper-slide>
+
+            <swiper-slide loading="lazy">
+              <img src="/assets/projects/wonderlabs_3.png" alt="projects_wonderlabs" loading="lazy">
+            </swiper-slide>
+
+            <swiper-slide loading="lazy">
+              <img src="/assets/projects/wonderlabs_4.png" alt="projects_wonderlabs" loading="lazy">
+            </swiper-slide>
+          </swiper-container>
+
         </div>
 
 
@@ -88,7 +108,13 @@
     <div class="project__container project-ftp">
       <div class="section__wrapper section__split-image">
         <div class="project__carousel">
-          <img src="/assets/projects/yp_1.png" alt="project fish the spot">
+          <swiper-container pagination="true" navigation="true">
+
+            <swiper-slide lazy="true">
+              <img src="/assets/projects/yp_1.png" alt="project fish the spot" loading="lazy">
+            </swiper-slide>
+
+          </swiper-container>
         </div>
 
 
@@ -129,7 +155,17 @@
     <div class="project__container project-yp">
       <div class="section__wrapper section__split-image">
         <div class="project__carousel">
-          <img src="/assets/projects/yp_1.png" alt="project yummypets">
+          <swiper-container pagination="true" navigation="true">
+
+            <swiper-slide lazy="true">
+              <img src="/assets/projects/yp_1.png" alt="project fish the spot" loading="lazy">
+            </swiper-slide>
+
+            <swiper-slide lazy="true">
+              <img src="/assets/projects/yp_1.png" alt="project fish the spot" loading="lazy">
+            </swiper-slide>
+
+          </swiper-container>
         </div>
 
 
