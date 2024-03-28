@@ -54,6 +54,7 @@ textarea {
 }
 
 .header {
+  z-index: 2;
   background-color: rgba(var(--bg-hex), .4);
   backdrop-filter: blur(2px);
   position: fixed;
@@ -128,7 +129,8 @@ textarea {
   }
 
   &.project-yp {
-    --project-background: #68af9f;
+    --project-background: #CAE9E0;
+    --project-color: #242424
   }
 
   &.project-ftp {
@@ -148,6 +150,7 @@ textarea {
     gap: 1rem;
     justify-content: end;
     max-width: 25rem;
+    color: var(--project-color);
   }
 
   &__title {
@@ -181,6 +184,11 @@ textarea {
       text-transform: uppercase;
     }
 
+  }
+
+  &__web {
+    font-weight: lighter;
+    color: var(--project-color);
   }
 
 }
