@@ -1,4 +1,5 @@
 import './style.scss';
+import './swiper.ts';
 import { sendEmail } from "./email.service.ts";
 
 const contactFormEl: HTMLElement | null = document.getElementById('contact-form');
