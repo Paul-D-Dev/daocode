@@ -27,7 +27,7 @@
 
 <main id="app">
 
-  <section class="hero section__wrapper">
+  <section class="hero section-p-y section-p-x">
 
     <div class="hero__details">
 
@@ -41,11 +41,10 @@
     </div>
 
   </section>
-  1920 * 1080
 
   <section id="projects" class="projects">
     <div class="project__container project-wl">
-      <div class="section__wrapper section__split-image">
+      <div class="section-container section__split-image">
         <div class="project__carousel">
 
           <!--          TODO FIX image loaded before init swiper-->
@@ -106,7 +105,7 @@
     </div>
 
     <div class="project__container project-ftp">
-      <div class="section__wrapper section__split-image">
+      <div class="section-container section__split-image">
         <div class="project__carousel">
           <swiper-container pagination="true" navigation="true">
 
@@ -153,7 +152,7 @@
     </div>
 
     <div class="project__container project-yp">
-      <div class="section__wrapper section__split-image">
+      <div class="section-container section__split-image">
         <div class="project__carousel">
           <swiper-container pagination="true" navigation="true">
 
@@ -221,57 +220,54 @@
 
   </section>
 
-  <section id="contact" class="section__wrapper contact">
+  <section id="contact" class="section-container contact">
 
-    <div class="contact__form__container">
+    <form id="contact-form" class="contact__form">
 
-      <form id="contact-form" class="contact__form">
+      <div>
+        <label for="name">Name <sup>*</sup></label>
+        <input type="text" name="name" id="name" placeholder="Your name" required/>
+      </div>
 
-        <div>
-          <label for="name">Name <sup>*</sup></label>
-          <input type="text" name="name" id="name" placeholder="Your name" required/>
-        </div>
+      <div>
+        <label for="email">Email <sup>*</sup></label>
+        <input type="email" name="email" id="email" placeholder="Your email" required/>
+      </div>
 
-        <div>
-          <label for="email">Email <sup>*</sup></label>
-          <input type="email" name="email" id="email" placeholder="Your email" required/>
-        </div>
+      <div>
+        <label for="motive">Motivation <sup>*</sup></label>
+        <select name="motive" id="motive" required>
+          <option value="job">Job</option>
+          <option value="web">Web</option>
+        </select>
+      </div>
 
-        <div>
-          <label for="motive">Motivation <sup>*</sup></label>
-          <select name="motive" id="motive" required>
-            <option value="job">Job</option>
-            <option value="web">Web</option>
-          </select>
-        </div>
+      <div>
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company" placeholder="Your company"/>
+      </div>
 
-        <div>
-          <label for="company">Company</label>
-          <input type="text" name="company" id="company" placeholder="Your company"/>
-        </div>
+      <div class="contact__form__message">
+        <label for="message">Message <sup>*</sup></label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Write your message"
+          required
+        ></textarea>
+      </div>
 
-        <div class="contact__form__message">
-          <label for="message">Message <sup>*</sup></label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Write your message"
-            required
-          ></textarea>
-        </div>
+      <div class="contact__form__btn">
+        <button type="submit">Send</button>
+      </div>
+    </form>
 
-        <div class="contact__form__btn">
-          <button type="submit">Send</button>
-        </div>
-      </form>
-
-    </div>
   </section>
 
 </main>
 
-<footer class="section__wrapper">
-  <div class="footer__container section__split">
+<footer class="footer">
+  <div class="section-container section__split">
     <div>
       <p>Dao Code <br/>by Paul Dao</p>
       <p class="reserved fw-light">© 2024 Dao code. ALL RIGHT RESERVED.</p>

@@ -114,15 +114,25 @@ textarea {
   aspect-ratio: 16/9;
 }
 
-.section__wrapper {
+.section-p-x {
   padding-inline: min(5vw, 15rem);
+}
+
+.section-p-y {
   padding-block: min(10vh, 10rem);
+}
+
+.section-container {
+  width: min(115rem, 100% - 10vw);
+  margin-inline: auto;
+  padding-block: min(10vh, 10rem);;
 }
 
 .project__container {
   --project-background: var(--bg-rgb);
   --project-color: var(--color);
   background-color: var(--project-background);
+
 
   &.project-wl {
     --project-background: #a12b2b;
@@ -140,10 +150,6 @@ textarea {
 
 .project {
 
-  &__carousel {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 24px 80px 0;
-  }
-
   &__description {
     display: flex;
     flex-direction: column;
@@ -155,7 +161,7 @@ textarea {
 
   &__title {
     h3 {
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 2vw, 2rem)
     }
   }
 
@@ -194,11 +200,6 @@ textarea {
 }
 
 .contact {
-
-  &__form__container {
-    max-width: 80rem;
-    margin-inline: auto;
-  }
 
   &__form {
     display: grid;
@@ -250,6 +251,7 @@ textarea {
 }
 
 .footer {
+
   &__social__list {
     display: flex;
     flex-direction: column;
@@ -267,8 +269,8 @@ textarea {
   }
 }
 
-@media screen and (width >= 967px) {
+@media screen and (width >= 1250px) {
   .section__split-image {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1600px) auto;
   }
 }
