@@ -9,7 +9,9 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const projectDescriptionEls = document.querySelectorAll('.project__description');
+const projectCarouselEls = document.querySelectorAll('.project__carousel');
 projectDescriptionEls.forEach(descriptionEl => observer.observe(descriptionEl));
+projectCarouselEls.forEach(carouselEl => observer.observe(carouselEl));
 
 
 const contactFormEl: HTMLElement | null = document.getElementById('contact-form');
