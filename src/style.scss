@@ -125,14 +125,14 @@ textarea {
 .section-container {
   width: min(115rem, 100% - 10vw);
   margin-inline: auto;
-  padding-block: min(10vh, 10rem);;
+  padding-block: min(10vh, 10rem);
+  overflow-x: hidden;
 }
 
 .project__container {
   --project-background: var(--bg-rgb);
   --project-color: var(--color);
   background-color: var(--project-background);
-
 
   &.project-wl {
     --project-background: #a12b2b;
@@ -150,6 +150,15 @@ textarea {
 
 .project {
 
+  &__carousel {
+    transform: scale(0.7);
+    transition: .5s ease-in-out;
+
+    &.reveal {
+      transform: scale(1);
+    }
+  }
+
   &__description {
     display: flex;
     flex-direction: column;
@@ -157,6 +166,14 @@ textarea {
     justify-content: end;
     max-width: 25rem;
     color: var(--project-color);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 1s ease-in-out;
+
+    &.reveal {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   &__title {
