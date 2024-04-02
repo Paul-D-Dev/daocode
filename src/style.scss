@@ -150,15 +150,6 @@ textarea {
 
 .project {
 
-  &__carousel {
-    transform: scale(0.7);
-    transition: .5s ease-in-out;
-
-    &.reveal {
-      transform: scale(1);
-    }
-  }
-
   &__description {
     display: flex;
     flex-direction: column;
