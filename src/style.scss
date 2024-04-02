@@ -80,7 +80,22 @@ textarea {
   linear-gradient(to bottom, var(--hero-background-color-grid) 1px, transparent 1px);
 
   &__details {
-    p {
+    div {
+      overflow: hidden;
+      $divToAnimate: 3;
+
+      * {
+        animation: reveal-y cubic-bezier(0.77, 0, 0.175, 1) .5s forwards;
+      }
+
+      @for $i from 1 through $divToAnimate {
+        &:nth-of-type(#{$i}) * {
+          animation-duration: #{$i}s;
+        }
+      }
+    }
+
+    div p {
       font-weight: 300;
       font-size: var(--fs-xl);
       font-family: "Times", serif;
@@ -284,5 +299,14 @@ textarea {
 @media screen and (width >= 1250px) {
   .section__split-image {
     grid-template-columns: minmax(0, 1600px) auto;
+  }
+}
+
+@keyframes reveal-y {
+  0% {
+    transform: translateY(130%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
