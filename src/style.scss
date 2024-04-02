@@ -203,6 +203,10 @@ textarea {
   &__web {
     font-weight: lighter;
     color: var(--project-color);
+
+    a {
+      color: inherit;
+    }
   }
 
 }
