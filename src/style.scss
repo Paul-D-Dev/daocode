@@ -53,6 +53,26 @@ textarea {
   resize: none;
 }
 
+strong {
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.btn__cta {
+  padding: .9rem 1.25rem;
+  margin-block-start: 1rem;
+  border: none;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  font-weight: bold;
+
+  a {
+    height: 100%;
+    width: 100%;
+    color: var(--bg-rgb);
+  }
+}
+
 .header {
   z-index: 2;
   background-color: rgba(var(--bg-hex), .4);
@@ -102,19 +122,34 @@ textarea {
     }
   }
 
-  &__cta {
-    padding: .9rem 1.25rem;
-    margin-block-start: 1rem;
-    border: none;
-    background-color: var(--color-primary);
-    cursor: pointer;
-    font-weight: bold;
 
-    a {
-      height: 100%;
-      width: 100%;
-      color: var(--bg-rgb);
-    }
+}
+
+.about {
+  justify-items: center;
+
+  &__info {
+    margin-block-start: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 40rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: serif;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__img {
+    aspect-ratio: 13/18;
+    max-width: 31.25rem;
   }
 
 }
